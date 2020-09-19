@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L'ARCHITECTURE DES ORDINATEURS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barlow'>
+        <script src="https://kit.fontawesome.com/eb7651b3c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="www/styles/styles.css">
+        <script src="www/scripts/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class='console-container'>
+				<span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
+			</div>
+            <script src="www/scripts/titleEffect.js"></script>
+        </header>
+        <div id="main">
+            <div class="sidebar" id="mySidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+              <button class="tablinks leftbar" onclick="openTab(event, 'hme')" id="hmeBtn"><i class="fas fa-home icon"></i>Accueil</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'mbd')" id="mbdBtn"><i class="fab fa-whmcs icon"></i>La carte m&egrave;re</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'cpu')" id="cpuBtn"><i class="fas fa-microchip icon"></i>Le processeur</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'ram')" id="ramBtn"><i class="fas fa-memory icon"></i>La m&eacute;moire vive</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'hdd')" id="hddBtn"><i class="fas fa-hdd icon"></i>Le stockage</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'psu')" id="psuBtn"><i class="fas fa-plug icon"></i>L'alimentation</button>
+              <button class="tablinks leftbar" onclick="openTab(event, 'gpu')" id="gpuBtn"><i class="fas fa-dice-d20 icon"></i>La carte graphique</button>
+              <button class="tablinks leftbar" onclick="window.location.href='references.html';" id="refBtn"><i class="fas fa-globe icon"></i>R&eacute;f&eacute;rences</button>
+            </div>
+            <div id="hme" class="tabcontent">
+                <div class="tabText">
+                    <h3>L'unit&eacute; centrale</h3>
+                    <p class="animate-left">
+                        C'est l'ensemble des composants essentiels (ou optionnels) au bon fonctionnement d'un ordinateur. <br><br>
+                        L'ensemble est contenu dans un bo&icirc;tier, lequel est pourvu d'un syst&egrave;me de refroidissement. 
+                        Celui-ci consiste en un ensemble de ventilateurs ayant pour objectif de g&eacute;n&eacute;rer un flux d'air pour &eacute;viter 
+                        une surchauffe des composants.<br><br>
+                        Pour intéragir avec l'ordinateur on utilise des périphériques. Certains sont dits de "sortie", ils permettent à l'ordinateur d'envoyer
+                        des informations au monde extérieur, on peut citer les écrans, les imprimantes, les haut-parleurs... D'autres sont dits périphériques "d'entrée" et 
+                        permettent d'envoyer des informations à l'ordinateur, avec par exemple le clavier ou la souris.
+                    </p>
+                </div>
+                
+                <img src="www/img/pc2.jpg" class=" imgShadow" usemap="#image-map" id="imgPC">
+                <map name="image-map">
+                    <area alt="PSU" onmouseover='show("imgPSU");' onmouseout='hide("imgPSU");' onclick="openTab(event, 'psu')" coords="0,319,230,484" shape="rect">
+                    <area alt="HDD" onmouseover='show("imgHDD");' onmouseout='hide("imgHDD");' onclick="openTab(event, 'hdd')" coords="245,320,477,485" shape="rect">
+                    <area alt="GPU" onmouseover='show("imgGPU");' onmouseout='hide("imgGPU");' onclick="openTab(event, 'gpu')" coords="0,237,398,311" shape="rect">
+                    <area alt="CPU" onmouseover='show("imgCPU");' onmouseout='hide("imgCPU");' onclick="openTab(event, 'cpu')" coords="106,110,210,211" shape="rect">
+                    <area alt="RAM" onmouseover='show("imgRAM");' onmouseout='hide("imgRAM");' onclick="openTab(event, 'ram')" coords="213,68,238,232" shape="rect">
+                    <area alt="MBD" onmouseover='show("imgMBD");' onmouseout='hide("imgMBD");' onclick="openTab(event, 'mbd')" coords="240,72,270,236" shape="rect">
+                    <area alt="MBD" onmouseover='show("imgMBD");' onmouseout='hide("imgMBD");' onclick="openTab(event, 'mbd')" coords="41,66,104,237" shape="rect">
+                    <area alt="MBD" onmouseover='show("imgMBD");' onmouseout='hide("imgMBD");' onclick="openTab(event, 'mbd')" coords="107,64,210,107" shape="rect">
+                </map>
+                <div id="imgPSU" class="divCompo">
+                    <img src="www/img/psu.png" class="imgCompo">
+                    <h3>Le bloc d'alimentation</h3>
+                    <div class="compoTxt">
+                        c'est le block d'alimentation
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+                <div id="imgCPU" class="divCompo">
+                    <img src="www/img/cpu.png" class="imgCompo">
+                    <h3>Le processeur</h3>
+                    <div class="compoTxt">
+                        c'est le cpu
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+                <div id="imgRAM" class="divCompo">
+                    <img src="www/img/ram.png" class="imgCompo">
+                    <h3>La mémoire vive</h3>
+                    <div class="compoTxt">
+                        c'est le blocjdljd
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+                <div id="imgGPU" class="divCompo">
+                    <img src="www/img/gpu.png" class="imgCompo">
+                    <h3>La carte graphique</h3>
+                    <div class="compoTxt">
+                        c'est le blocjdljd
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+                <div id="imgHDD" class="divCompo">
+                    <img src="www/img/hdd.png" class="imgCompo">
+                    <h3>Le stockage</h3>
+                    <div class="compoTxt">
+                        c'est le blocjdljd
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+                <div id="imgMBD" class="divCompo">
+                    <img src="www/img/mb.png" class="imgCompo">
+                    <h3>La carte m&egrave;re</h3>
+                    <div class="compoTxt">
+                        c'est le block d'alimentation
+                        dqd
+                        qd
+                        question
+                        dqsddqdqd
+                    </div>
+                </div>
+            </div>
+
+            <div id="mbd" class="tabcontent">
+              <h3>La carte m&egrave;re</h3>
+              <p class="animate-left">C'est la carte mere</p>
+            </div>
+
+            <div id="cpu" class="tabcontent">
+              <h3>Le processeur</h3>
+              <p>TODO</p>
+            </div>
+
+            <div id="ram" class="tabcontent">
+              <h3>La m&eacute;moire vive</h3>
+              <p>TODO</p>
+            </div>
+
+            <div id="hdd" class="tabcontent">
+              <h3>Le disque dur</h3>
+              <p>TODO</p>
+            </div>
+
+            <div id="psu" class="tabcontent">
+              <h3>L'alimentation</h3>
+              <p>TODO</p>
+            </div>
+
+            <div id="gpu" class="tabcontent">
+              <h3>La carte graphique</h3>
+              <p>TODO</p>
+            </div>
+            <div id="popupContainer">
+                <div class="popup">
+                    Passe la souris sur l'ordinateur pour voir à quoi correspond chaque &eacute;l&eacute;ment !<br><br>
+                    Clique dessus pour voir sa page d&eacute;di&eacute;e !
+
+                    <button type="button" name="popBtn" class="popupBtn" onclick="hidePopup();">&times;</button>
+                </div>
+            </div>
+
+            <footer>
+                <div id="credits">
+                    Site réalisé par <b>MULTARI Gauthier</b> et <b>VASSON Arthur</b>
+                </div>
+                <div id="logos">
+                    <div id="logos_pictures">
+                        <a href="https://www.grenoble-inp.fr/" target="_blank"><img src="www/img/logo_uga.png" style="padding-right: 150px;"></a>
+                        <a href="https://www.polytech-grenoble.fr/" target="_blank"><img src="www/img/logo_polytech.png"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            initPage();
+            var mini = true;
+        </script>
+    </body>
+</html>

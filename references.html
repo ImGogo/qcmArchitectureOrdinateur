@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L'ARCHITECTURE DES ORDINATEURS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barlow'>
+        <script src="https://kit.fontawesome.com/eb7651b3c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="www/styles/styles.css">
+        <script src="www/scripts/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class='console-container'>
+				<span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
+			</div>
+            <script src="www/scripts/titleEffect.js"></script>
+        </header>
+        <div id="main">
+            <div class="sidebar" id="mySidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()" style="border: 0;">
+              <button class="tablinks leftbar" onclick="window.location.href='index.html';" id="hmeBtn" style="background-color: #044979; color:#fff;"><i class="fas fa-home icon"></i>Accueil</button>
+            </div>
+            <div id="hme" class="tabcontent">
+                <h3>R&eacute;f&eacute;rences</h3>
+                <ul style="list-style: none; line-height: 2;" animate-left>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+            </div>
+
+            <footer>
+                <div id="credits">
+                    Site réalisé par <b>MULTARI Gauthier</b> et <b>VASSON Arthur</b>
+                </div>
+                <div id="logos">
+                    <div id="logos_pictures">
+                        <a href="https://www.grenoble-inp.fr/" target="_blank"><img src="www/img/logo_uga.png" style="padding-right: 150px;"></a>
+                        <a href="https://www.polytech-grenoble.fr/" target="_blank"><img src="www/img/logo_polytech.png"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            var mini = true;
+        </script>
+    </body>
+</html>
